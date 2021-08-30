@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+</head>
+<body>
+    <div class="content">
+        <div class="header row d-flex justify-content-center">BOOK MANAGEMENT WEB APPLICATION</div>
+        <div class="row">
+            <div class="col-3 navigation">
+                <div class="p-5">
+                    <div class="link"><a href="createBook.html">Add a Book</a></div>
+                    <div class="link"><a href="listBook.html">List Books</a></div>
+                </div>           
+            </div>
+            <div class="content col-9">
+                <form class="p-4">
+                    <h1>Create Book</h1>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Book Title<span style="color: red;">*</span>:</label>   
+                        <div class="col-10">
+                            <input size="50" type="text" class="form-control w-50" id="title"
+						    name="title" value=""> 
+                            <div class="errormessage mb-3" id="wrong-title"></div>    
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Page Count :</label>   
+                        <div class="col-10">
+                            <input size="40" type="text" class="form-control w-50" id="pageCount"
+						    name="pageCount" value=""> 
+                            <div class="errormessage mb-3" id="wrong-title"></div>    
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Price <span style="color: red;">*</span>:</label>   
+                        <div class="col-10">
+                            <input size="50" type="number" class="form-control w-50" id="price"
+						    name="price" value=""> 
+                            <div class="errormessage mb-3" id="wrong-title"></div>    
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Date published :</label>   
+                        <div class="col-10">
+                            <input size="50" type="text" class="form-control w-50" id="date"
+						    name="date" value="" placeholder="dd/MM/yyyy"> 
+                            <div class="errormessage mb-3" id="wrong-title"></div>    
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Author Name <span style="color: red;">*</span>:</label>   
+                        <div class="col-10">
+                            <select class="w-50 form-control">
+                            </select> 
+                            <div class="errormessage mb-3" id="wrong-title"></div>    
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <label for="label" class="form-label col-2 d-flex justify-content-end">Status <span style="color: red;">*</span>:</label>   
+                        <div class="col-10">
+                            <input type="radio" id="active"
+						    name="pageCount" value="Active" checked> <label for="active"></label>Active</label>
+                            <input type="radio" id="inActive"
+						    name="pageCount" value="InActive"> <label for="inActive">InActive</label>  
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-10"><button class="submit" type="submit">Create</button></div>
+                    </div>
+                    
+                </form>
+                
+            </div>  
+        </div>   
+        <div class="footer row d-flex justify-content-center" id="footer">Copyright - FSOFT Academy</div>
+      </div>
+    </div> 
+</body>
+</html>
